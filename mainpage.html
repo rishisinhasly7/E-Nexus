@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Nexus(A platform to Earm from playing)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->   
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+           <h1>E-Nexus</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Profile</a></li>
+                <!-- Link to login page -->
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <!-- Link to sign-up page -->
+                <!-- <li><a href="signup.html" id="signup-link">Sign Up</a></li>
+            </ul> -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome To E-Nexus</h1>
+            <p>A best Platform To Connect With Success</p>
+            <button class="cta-btn" onclick="scrollToSection('portfolio')">View Features</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2>About E-Nexus</h2>
+            <p>It's a paltform where gamers , content creators and gaming staffs can reach to big organisation to show them who u are and what makes u to be in that oragnisation.</div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <h2>Your Portfolio</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total People Connected</h3>
+                    <p>5000</p>
+                </div>
+                <div class="stat-card">
+                    <h3>People Connecting Daily</h3>
+                    <p>+12.3%</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active People</h3>
+                    <p>7 Active</p>
+                </div>
+            </div>
+            <!-- Link to login page -->
+
+            
+            <a href="login.html" class="cta-btn">Login to Manage</a>
+        </div>
+    </section>
+
+    <!-- Market Trends Section -->
+    <!-- <section class="trends" id="trends">
+        <div class="trends-container">
+            <h2>Market Trends</h2>
+            <div class="trend-cards">
+                <div class="trend-card">
+                    <h3>Tech Stocks</h3>
+                    <p>Explore the latest trends in technology stocks and their market movements.</p>
+                </div>
+                <div class="trend-card">
+                    <h3></h3>
+                    <p>Stay updated with the latest news and price predictions for major cryptocurrencies.</p>
+                </div>
+                <div class="trend-card">
+                    <h3>Green Investments</h3>
+                    <p>The rise of sustainable investments and green finance opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <calendar>2025</calendar>E-Nexus. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Toggle menu for smaller screens
+        function toggleMenu() {
+            const navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+
+        // Scroll to a specific section on button click
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
